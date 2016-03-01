@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Mine View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MineViewController" id="BYZ-38-t0r" customClass="MineViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mlC-lt-BFs">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.19072875040222681" green="1" blue="0.51136170807197667" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3C4-I3-cLU"/>
+                                    <constraint firstAttribute="width" constant="141" id="UiF-5e-wAm"/>
+                                </constraints>
+                                <state key="normal" title="我的评论"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3C4-I3-cLU"/>
+                                        <exclude reference="UiF-5e-wAm"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="3C4-I3-cLU"/>
+                                        <include reference="UiF-5e-wAm"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="clickBT:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rft-yq-lJx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6MH-0f-MLq">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.19072875040000001" green="1" blue="0.51136170810000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="NdS-el-su1"/>
+                                    <constraint firstAttribute="width" constant="141" id="UY2-cM-35T"/>
+                                </constraints>
+                                <state key="normal" title="设置"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="NdS-el-su1"/>
+                                        <exclude reference="UY2-cM-35T"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="NdS-el-su1"/>
+                                        <include reference="UY2-cM-35T"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="clickSetBT:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gml-oB-L8z"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6MH-0f-MLq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="110" id="0ZY-lh-x7E"/>
+                            <constraint firstItem="mlC-lt-BFs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="265" id="Thq-4i-OL9"/>
+                            <constraint firstItem="mlC-lt-BFs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="110" id="TmR-Gh-mxT"/>
+                            <constraint firstItem="6MH-0f-MLq" firstAttribute="top" secondItem="mlC-lt-BFs" secondAttribute="bottom" constant="31" id="pNh-iL-So6"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="mlC-lt-BFs"/>
+                                <exclude reference="6MH-0f-MLq"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Thq-4i-OL9"/>
+                                <exclude reference="TmR-Gh-mxT"/>
+                                <exclude reference="0ZY-lh-x7E"/>
+                                <exclude reference="pNh-iL-So6"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="mlC-lt-BFs"/>
+                                <include reference="6MH-0f-MLq"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Thq-4i-OL9"/>
+                                <include reference="TmR-Gh-mxT"/>
+                                <include reference="0ZY-lh-x7E"/>
+                                <include reference="pNh-iL-So6"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="400.5" y="323"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NqE-0b-6OU">
+            <objects>
+                <viewController id="wCL-zb-rcP" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2bz-h9-TwA"/>
+                        <viewControllerLayoutGuide type="bottom" id="15d-oz-DqC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1sT-Hb-CaG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2fX-rP-ATx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1548" y="301"/>
+        </scene>
+    </scenes>
+</document>

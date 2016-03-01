@@ -1,0 +1,1 @@
+PODS_CSSHI__MAGICALRECORD_OTHER_LDFLAGS = -framework "CoreData"
