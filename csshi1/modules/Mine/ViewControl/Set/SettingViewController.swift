@@ -22,6 +22,7 @@ class SettingViewController: UITableViewController {
     }
     func insertNew(sender:AnyObject){
 //        var item : NSDictionary = NSDictionary(objects:["http://c.hiphotos.baidu.com/video/pic/item/f703738da977391224eade15fb198618377ae2f2.jpg","新增数据"] , forKeys: ["video_img","video_title"])
+        
 //        celldata.insertObject(item, atIndex: 0)
 //        let indexpath = NSIndexPath(forRow: 0, inSection: 0)
 //        self.tableview.insertRowsAtIndexPaths([indexpath], withRowAnimation: UITableViewRowAnimation.Automatic)
