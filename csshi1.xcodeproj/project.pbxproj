@@ -50,6 +50,7 @@
 		EB5030921C7415FE00BA4A73 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5030911C7415FE00BA4A73 /* Student.m */; };
 		EB5030941C7440C500BA4A73 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB5030931C7440C500BA4A73 /* CoreLocation.framework */; };
 		EB5030961C7440D500BA4A73 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB5030951C7440D500BA4A73 /* MapKit.framework */; };
+		EB60F25C1C96944F00BEF3C4 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB60F25B1C96944F00BEF3C4 /* CollectionViewController.m */; };
 		EB614A8A1C2917C3006C94A8 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = EB614A061C2917C2006C94A8 /* GTMBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		EB614A8B1C2917C3006C94A8 /* NSString+ThreeDES.m in Sources */ = {isa = PBXBuildFile; fileRef = EB614A091C2917C2006C94A8 /* NSString+ThreeDES.m */; };
 		EB614A8C1C2917C3006C94A8 /* CoreStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = EB614A0C1C2917C2006C94A8 /* CoreStatus.m */; };
@@ -297,6 +298,8 @@
 		EB5030911C7415FE00BA4A73 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		EB5030931C7440C500BA4A73 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		EB5030951C7440D500BA4A73 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		EB60F25A1C96944F00BEF3C4 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		EB60F25B1C96944F00BEF3C4 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 		EB614A051C2917C2006C94A8 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
 		EB614A061C2917C2006C94A8 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
 		EB614A071C2917C2006C94A8 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
@@ -604,6 +607,22 @@
 				211A3AEA276EB64E515213F0 /* Pods-csshi1.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		EB018A851C85801A001CE941 /* 练习 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "练习";
+			sourceTree = "<group>";
+		};
+		EB018A861C8580F6001CE941 /* 练习 */ = {
+			isa = PBXGroup;
+			children = (
+				EB60F25A1C96944F00BEF3C4 /* CollectionViewController.h */,
+				EB60F25B1C96944F00BEF3C4 /* CollectionViewController.m */,
+			);
+			path = "练习";
 			sourceTree = "<group>";
 		};
 		EB4C9A361C23A13C00212870 /* internet */ = {
@@ -1399,6 +1418,7 @@
 				EB82FCFB1C5C59B50085C03B /* SaveDataViewController.xib */,
 				EB82A0E21C619DC20072A039 /* FMDBViewController.h */,
 				EB82A0E31C619DC20072A039 /* FMDBViewController.m */,
+				EB018A861C8580F6001CE941 /* 练习 */,
 				EB50308F1C74158700BA4A73 /* ceshi */,
 			);
 			path = ViewControl;
@@ -1411,6 +1431,7 @@
 				EB706CC71C2163CA00542F7D /* MineViewController.m */,
 				EB733C0A1C50B8F1009ADCE1 /* FilmCommentViewController.h */,
 				EB733C0B1C50B8F1009ADCE1 /* FilmCommentViewController.m */,
+				EB018A851C85801A001CE941 /* 练习 */,
 				EBFDBC2A1C76EA14002DA1E9 /* Set */,
 			);
 			path = ViewControl;
@@ -1775,6 +1796,7 @@
 				EB614A8C1C2917C3006C94A8 /* CoreStatus.m in Sources */,
 				EB706CB81C2157E400542F7D /* TabBarController.m in Sources */,
 				EB4C9A851C23A56D00212870 /* NSObject+M1905Moives.m in Sources */,
+				EB60F25C1C96944F00BEF3C4 /* CollectionViewController.m in Sources */,
 				EB706CC51C2163BC00542F7D /* MenberViewController.m in Sources */,
 				EB614A9A1C2917C3006C94A8 /* MJRefreshBackNormalFooter.m in Sources */,
 				EB614AA51C2917C3006C94A8 /* UITableView+FDIndexPathHeightCache.m in Sources */,
