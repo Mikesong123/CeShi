@@ -426,5 +426,17 @@ static CGFloat const kNetTipViewPlaceHolderRatioVertical = 0.46f;
     
     return newimg;
 }
+#warning kankan
++ (NSMutableURLRequest *)imageRequestWithURL:(NSURL *)url {
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    
+    request.cachePolicy = NSURLRequestReturnCacheDataElseLoad;// this will make sure the request always returns the cached image
+    request.HTTPShouldHandleCookies = NO;
+    request.HTTPShouldUsePipelining = YES;
+    [request addValue:@"image/*"forHTTPHeaderField:@"Accept"];
+    
+    return request;
+    
+}
 
 @end
