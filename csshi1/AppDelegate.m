@@ -29,7 +29,7 @@
     
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.backgroundColor = [UIColor blackColor];
+    self.window.backgroundColor = [UIColor whiteColor];
     
     TabBarController *navbar = [[TabBarController alloc] init];
     self.window.rootViewController = navbar;

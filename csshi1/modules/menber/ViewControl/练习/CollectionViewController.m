@@ -7,9 +7,13 @@
 //
 
 #import "CollectionViewController.h"
+#import "siyoubianliang.h"
+#import "Quartz2dViewController.h"
+
 
 @interface CollectionViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>{
     UIImageView *_imgview;
+    NSDictionary *_namedic;
 }
 
 @property (nonatomic ,strong) UICollectionView *mainCollection;
@@ -42,6 +46,7 @@
     _mainCollection.autoresizingMask = UIViewAutoresizingFlexibleWidth;
 //    _mainCollection.contentInset = UIEdgeInsetsMake(64, 0, 49, 0);
     [_mainCollection registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"bigImageCell"];
+    [_mainCollection registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"headview"];
     
     [self.view addSubview:_mainCollection];
     //
@@ -57,6 +62,10 @@
         [_dataary addObject:[UIImage imageNamed:@"vip月卡"]];
     }
      [_dataary addObject:[UIImage imageNamed:@"vip月卡"]];
+    _namedic = [[NSMutableDictionary alloc] init];
+    _namedic = @{
+                 @"Quartz2dViewController" : @"画图"
+                 };
     
 }
 #pragma mark --delegate
@@ -71,8 +80,30 @@
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     return CGSizeMake((self.view.size.width-40)/3, 100);
 }
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{
+    return CGSizeMake(self.view.width, 150);
+}
+
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
     return UIEdgeInsetsMake(10, 10, 10, 10);
+}
+
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
+//    UICollectionReusableView *headView = nil;
+//    if (kind == UICollectionElementKindSectionHeader) {
+        UICollectionReusableView *headv = [collectionView  dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"headview" forIndexPath:indexPath];  //dequeueReusableCellWithReuseIdentifier:@"headview" forIndexPath:indexPath];
+        UIImageView *img = [[UIImageView alloc] init];
+        [headv addSubview:img];
+        [img mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.left.right.bottom.equalTo(@0);
+        }];
+        img.animationImages = _dataary;
+        img.animationRepeatCount = 1;
+        img.animationDuration = 3;
+        [img startAnimating];
+//    }
+    return headv;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
@@ -89,10 +120,39 @@
 }
 //
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"%d",indexPath.row);
+    NSLog(@"%ld",(long)indexPath.row);
+    if (indexPath.row == 1) {
+        [self changeViewControl];
+    }
 }
 //
+- (void)dianjikekan{
+    siyoubianliang *model = [[siyoubianliang alloc] init];
+    [model setValue:@"在别处可以访问" forKey:@"_username"];
 
+    //
+    Ivar username = class_getClassVariable([model class], "_username");
+    NSString *user = object_getIvar(model, username);
+    NSLog(@"------%@",user);
 
+    //累村问题
+    for (int i = 0; i < 100000; ++i) {
+        @autoreleasepool {
+            NSString *str = @"Abc";
+            str = [str lowercaseString];
+            str = [str stringByAppendingString:@"xyz"];
+            
+            NSLog(@"%@", str);
+        }
+    }
+}
 
+- (void)changeViewControl{
+    Quartz2dViewController *vc = [[Quartz2dViewController alloc] init];
+    vc.isplay = ^(NSString *string){
+        NSLog(@"----%@",string);
+        return YES;
+    };
+    [self.navigationController pushViewController:vc animated:YES];
+}
 @end

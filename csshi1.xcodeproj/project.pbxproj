@@ -50,6 +50,7 @@
 		EB5030921C7415FE00BA4A73 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5030911C7415FE00BA4A73 /* Student.m */; };
 		EB5030941C7440C500BA4A73 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB5030931C7440C500BA4A73 /* CoreLocation.framework */; };
 		EB5030961C7440D500BA4A73 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB5030951C7440D500BA4A73 /* MapKit.framework */; };
+		EB5AD5C31C9A4D49008E6D0E /* Quartz2dViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5AD5C21C9A4D49008E6D0E /* Quartz2dViewController.m */; };
 		EB60F25C1C96944F00BEF3C4 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB60F25B1C96944F00BEF3C4 /* CollectionViewController.m */; };
 		EB614A8A1C2917C3006C94A8 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = EB614A061C2917C2006C94A8 /* GTMBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		EB614A8B1C2917C3006C94A8 /* NSString+ThreeDES.m in Sources */ = {isa = PBXBuildFile; fileRef = EB614A091C2917C2006C94A8 /* NSString+ThreeDES.m */; };
@@ -179,6 +180,7 @@
 		EB82FD011C5C60D60085C03B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB82FD001C5C60D60085C03B /* UIKit.framework */; };
 		EB82FD031C5C60E00085C03B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB82FD021C5C60E00085C03B /* Foundation.framework */; };
 		EB82FD051C5C60EB0085C03B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB82FD041C5C60EB0085C03B /* CoreGraphics.framework */; };
+		EB8663461C979B1000F93E3B /* siyoubianliang.m in Sources */ = {isa = PBXBuildFile; fileRef = EB8663451C979B1000F93E3B /* siyoubianliang.m */; };
 		EBFDBC271C76BA3A002DA1E9 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFDBC261C76BA3A002DA1E9 /* MapViewController.m */; };
 		EBFDBC2F1C76EA75002DA1E9 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFDBC2E1C76EA75002DA1E9 /* SettingViewController.swift */; };
 		EBFF42911C7323BD0010BCE9 /* CeShiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFF42901C7323BD0010BCE9 /* CeShiViewController.m */; };
@@ -298,6 +300,8 @@
 		EB5030911C7415FE00BA4A73 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		EB5030931C7440C500BA4A73 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		EB5030951C7440D500BA4A73 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		EB5AD5C11C9A4D49008E6D0E /* Quartz2dViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quartz2dViewController.h; sourceTree = "<group>"; };
+		EB5AD5C21C9A4D49008E6D0E /* Quartz2dViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quartz2dViewController.m; sourceTree = "<group>"; };
 		EB60F25A1C96944F00BEF3C4 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
 		EB60F25B1C96944F00BEF3C4 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 		EB614A051C2917C2006C94A8 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
@@ -535,6 +539,8 @@
 		EB82FD001C5C60D60085C03B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EB82FD021C5C60E00085C03B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EB82FD041C5C60EB0085C03B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EB8663441C979B1000F93E3B /* siyoubianliang.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = siyoubianliang.h; sourceTree = "<group>"; };
+		EB8663451C979B1000F93E3B /* siyoubianliang.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = siyoubianliang.m; sourceTree = "<group>"; };
 		EBFDBC251C76BA3A002DA1E9 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		EBFDBC261C76BA3A002DA1E9 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		EBFDBC2B1C76EA35002DA1E9 /* csshi1-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "csshi1-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -621,6 +627,10 @@
 			children = (
 				EB60F25A1C96944F00BEF3C4 /* CollectionViewController.h */,
 				EB60F25B1C96944F00BEF3C4 /* CollectionViewController.m */,
+				EB8663441C979B1000F93E3B /* siyoubianliang.h */,
+				EB8663451C979B1000F93E3B /* siyoubianliang.m */,
+				EB5AD5C11C9A4D49008E6D0E /* Quartz2dViewController.h */,
+				EB5AD5C21C9A4D49008E6D0E /* Quartz2dViewController.m */,
 			);
 			path = "练习";
 			sourceTree = "<group>";
@@ -1783,6 +1793,7 @@
 				EB614A9C1C2917C3006C94A8 /* MJRefreshGifHeader.m in Sources */,
 				EB7384381C2A93DC00B7419F /* UserTransation.m in Sources */,
 				EB4C9A861C23A56D00212870 /* NSObject+SystemInfo.m in Sources */,
+				EB8663461C979B1000F93E3B /* siyoubianliang.m in Sources */,
 				EB4C9A5F1C23A2AE00212870 /* pinyin.m in Sources */,
 				EB7384441C2A949E00B7419F /* SettingInfoModel.m in Sources */,
 				EB614AC71C2929B4006C94A8 /* Action.m in Sources */,
@@ -1880,6 +1891,7 @@
 				EB733C0C1C50B8F1009ADCE1 /* FilmCommentViewController.m in Sources */,
 				EB4FF4751C3CB63100C424CD /* SpecialTableView.m in Sources */,
 				EB614AC21C2917C3006C94A8 /* UMRadialView.m in Sources */,
+				EB5AD5C31C9A4D49008E6D0E /* Quartz2dViewController.m in Sources */,
 				EB73841E1C2A8E6C00B7419F /* BaseTableViewCell.m in Sources */,
 				EB614AC41C2917C3006C94A8 /* YRJSONAdapter.m in Sources */,
 				EB4C9A881C23A56D00212870 /* UIImage+animatedGIF.m in Sources */,

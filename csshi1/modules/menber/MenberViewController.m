@@ -12,6 +12,7 @@
 #import "FMDBViewController.h"
 #import "CeShiViewController.h"
 #import "CollectionViewController.h"
+#import "siyoubianliang.h"
 
 @interface MenberViewController ()
 
@@ -23,6 +24,8 @@
 {
     self = [super init];
     if (self) {
+//        siyoubianliang *model = [[siyoubianliang alloc] init];
+//        [model setValue:@"在别处可以访问" forKey:@"_username"];
     }
     return self;
 }

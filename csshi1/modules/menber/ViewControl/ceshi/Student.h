@@ -13,6 +13,7 @@
 @property(nonatomic,retain)NSString *name;
 @property(nonatomic,retain)NSString *studentnum;
 @property(nonatomic,retain)NSString *sex;
+@property(nonatomic,assign)NSInteger  age;
 //
 /**
  *  大头针的位置
