@@ -14,6 +14,7 @@
 #import "CollectionViewController.h"
 #import "siyoubianliang.h"
 
+
 @interface MenberViewController ()
 
 @end
@@ -26,6 +27,7 @@
     if (self) {
 //        siyoubianliang *model = [[siyoubianliang alloc] init];
 //        [model setValue:@"在别处可以访问" forKey:@"_username"];
+      
     }
     return self;
 }

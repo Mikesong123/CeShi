@@ -113,6 +113,9 @@
 		EB614AC71C2929B4006C94A8 /* Action.m in Sources */ = {isa = PBXBuildFile; fileRef = EB614AC61C2929B4006C94A8 /* Action.m */; };
 		EB6355DA1C7AA45E0052B653 /* CSTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6355D91C7AA45E0052B653 /* CSTableViewCell.swift */; };
 		EB6359101C22825700037ADC /* RecommendHeadCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB63590F1C22825700037ADC /* RecommendHeadCollectionViewCell.m */; };
+		EB666F441CA0DC1F009266CA /* WeiYuShiYongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB666F431CA0DC1F009266CA /* WeiYuShiYongViewController.m */; };
+		EB666F471CA0DC73009266CA /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = EB666F461CA0DC73009266CA /* Person.m */; };
+		EB666F4A1CA0F8C4009266CA /* wannengtiaozhuanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB666F491CA0F8C4009266CA /* wannengtiaozhuanViewController.m */; };
 		EB669FAB1C3A450A0094F358 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB669F8E1C3A450A0094F358 /* TencentOpenAPI.framework */; };
 		EB669FAC1C3A450A0094F358 /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EB669F8F1C3A450A0094F358 /* TencentOpenApi_IOS_Bundle.bundle */; };
 		EB669FAD1C3A450A0094F358 /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB669F911C3A450A0094F358 /* libWeiboSDK.a */; };
@@ -180,6 +183,7 @@
 		EB82FD011C5C60D60085C03B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB82FD001C5C60D60085C03B /* UIKit.framework */; };
 		EB82FD031C5C60E00085C03B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB82FD021C5C60E00085C03B /* Foundation.framework */; };
 		EB82FD051C5C60EB0085C03B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB82FD041C5C60EB0085C03B /* CoreGraphics.framework */; };
+		EB83D1BB1C9FF3C900866118 /* CuoWuTiaoShiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB83D1BA1C9FF3C900866118 /* CuoWuTiaoShiViewController.m */; };
 		EB8663461C979B1000F93E3B /* siyoubianliang.m in Sources */ = {isa = PBXBuildFile; fileRef = EB8663451C979B1000F93E3B /* siyoubianliang.m */; };
 		EBFDBC271C76BA3A002DA1E9 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFDBC261C76BA3A002DA1E9 /* MapViewController.m */; };
 		EBFDBC2F1C76EA75002DA1E9 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFDBC2E1C76EA75002DA1E9 /* SettingViewController.swift */; };
@@ -417,6 +421,12 @@
 		EB6355D91C7AA45E0052B653 /* CSTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSTableViewCell.swift; sourceTree = "<group>"; };
 		EB63590E1C22825700037ADC /* RecommendHeadCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendHeadCollectionViewCell.h; sourceTree = "<group>"; };
 		EB63590F1C22825700037ADC /* RecommendHeadCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendHeadCollectionViewCell.m; sourceTree = "<group>"; };
+		EB666F421CA0DC1F009266CA /* WeiYuShiYongViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiYuShiYongViewController.h; sourceTree = "<group>"; };
+		EB666F431CA0DC1F009266CA /* WeiYuShiYongViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiYuShiYongViewController.m; sourceTree = "<group>"; };
+		EB666F451CA0DC73009266CA /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = "../ViewControl/练习/Person.h"; sourceTree = "<group>"; };
+		EB666F461CA0DC73009266CA /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = "../ViewControl/练习/Person.m"; sourceTree = "<group>"; };
+		EB666F481CA0F8C4009266CA /* wannengtiaozhuanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wannengtiaozhuanViewController.h; sourceTree = "<group>"; };
+		EB666F491CA0F8C4009266CA /* wannengtiaozhuanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wannengtiaozhuanViewController.m; sourceTree = "<group>"; };
 		EB669F8E1C3A450A0094F358 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
 		EB669F8F1C3A450A0094F358 /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
 		EB669F911C3A450A0094F358 /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeiboSDK.a; sourceTree = "<group>"; };
@@ -539,6 +549,8 @@
 		EB82FD001C5C60D60085C03B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EB82FD021C5C60E00085C03B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EB82FD041C5C60EB0085C03B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EB83D1B91C9FF3C900866118 /* CuoWuTiaoShiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CuoWuTiaoShiViewController.h; sourceTree = "<group>"; };
+		EB83D1BA1C9FF3C900866118 /* CuoWuTiaoShiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CuoWuTiaoShiViewController.m; sourceTree = "<group>"; };
 		EB8663441C979B1000F93E3B /* siyoubianliang.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = siyoubianliang.h; sourceTree = "<group>"; };
 		EB8663451C979B1000F93E3B /* siyoubianliang.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = siyoubianliang.m; sourceTree = "<group>"; };
 		EBFDBC251C76BA3A002DA1E9 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
@@ -631,6 +643,10 @@
 				EB8663451C979B1000F93E3B /* siyoubianliang.m */,
 				EB5AD5C11C9A4D49008E6D0E /* Quartz2dViewController.h */,
 				EB5AD5C21C9A4D49008E6D0E /* Quartz2dViewController.m */,
+				EB666F421CA0DC1F009266CA /* WeiYuShiYongViewController.h */,
+				EB666F431CA0DC1F009266CA /* WeiYuShiYongViewController.m */,
+				EB666F481CA0F8C4009266CA /* wannengtiaozhuanViewController.h */,
+				EB666F491CA0F8C4009266CA /* wannengtiaozhuanViewController.m */,
 			);
 			path = "练习";
 			sourceTree = "<group>";
@@ -782,6 +798,8 @@
 				EB04B4141C75CB0B005729D0 /* ceshi1ViewController.m */,
 				EBFDBC251C76BA3A002DA1E9 /* MapViewController.h */,
 				EBFDBC261C76BA3A002DA1E9 /* MapViewController.m */,
+				EB83D1B91C9FF3C900866118 /* CuoWuTiaoShiViewController.h */,
+				EB83D1BA1C9FF3C900866118 /* CuoWuTiaoShiViewController.m */,
 			);
 			path = ceshi;
 			sourceTree = "<group>";
@@ -1373,6 +1391,8 @@
 		EB7384261C2A91AE00B7419F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EB666F451CA0DC73009266CA /* Person.h */,
+				EB666F461CA0DC73009266CA /* Person.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1808,6 +1828,7 @@
 				EB706CB81C2157E400542F7D /* TabBarController.m in Sources */,
 				EB4C9A851C23A56D00212870 /* NSObject+M1905Moives.m in Sources */,
 				EB60F25C1C96944F00BEF3C4 /* CollectionViewController.m in Sources */,
+				EB666F4A1CA0F8C4009266CA /* wannengtiaozhuanViewController.m in Sources */,
 				EB706CC51C2163BC00542F7D /* MenberViewController.m in Sources */,
 				EB614A9A1C2917C3006C94A8 /* MJRefreshBackNormalFooter.m in Sources */,
 				EB614AA51C2917C3006C94A8 /* UITableView+FDIndexPathHeightCache.m in Sources */,
@@ -1819,6 +1840,7 @@
 				EB614A971C2917C3006C94A8 /* MJRefreshAutoNormalFooter.m in Sources */,
 				EB4C9A901C23AA2900212870 /* Request.m in Sources */,
 				EB614ABC1C2917C3006C94A8 /* UMFeedbackViewController.m in Sources */,
+				EB83D1BB1C9FF3C900866118 /* CuoWuTiaoShiViewController.m in Sources */,
 				EB706C7E1C20FCBB00542F7D /* main.m in Sources */,
 				EB669FD21C3A5CCF0094F358 /* AppInfoData.m in Sources */,
 				EB614ABE1C2917C3006C94A8 /* UMChatTableViewCell.m in Sources */,
@@ -1890,11 +1912,13 @@
 				EB4FF48B1C3CBD8C00C424CD /* TADotView.m in Sources */,
 				EB733C0C1C50B8F1009ADCE1 /* FilmCommentViewController.m in Sources */,
 				EB4FF4751C3CB63100C424CD /* SpecialTableView.m in Sources */,
+				EB666F471CA0DC73009266CA /* Person.m in Sources */,
 				EB614AC21C2917C3006C94A8 /* UMRadialView.m in Sources */,
 				EB5AD5C31C9A4D49008E6D0E /* Quartz2dViewController.m in Sources */,
 				EB73841E1C2A8E6C00B7419F /* BaseTableViewCell.m in Sources */,
 				EB614AC41C2917C3006C94A8 /* YRJSONAdapter.m in Sources */,
 				EB4C9A881C23A56D00212870 /* UIImage+animatedGIF.m in Sources */,
+				EB666F441CA0DC1F009266CA /* WeiYuShiYongViewController.m in Sources */,
 				EB4FF4781C3CBCE600C424CD /* ScrollTableViewCell.m in Sources */,
 				EB4C9A5E1C23A2AE00212870 /* NSString+EasyExtend.m in Sources */,
 				EB4C9A5D1C23A2AE00212870 /* NSObject+EasyTypeConversion.mm in Sources */,
@@ -2079,6 +2103,7 @@
 					"$(PROJECT_DIR)/csshi1/ShareSDK/extends/WeChatSDK",
 					"$(PROJECT_DIR)/csshi1/AdSDK/BaiDuAdApi",
 					"$(PROJECT_DIR)/csshi1/AdSDK/GDTAd",
+					"$(PROJECT_DIR)/csshi1/ceshi/Release-iphoneos",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.csshi1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2113,6 +2138,7 @@
 					"$(PROJECT_DIR)/csshi1/ShareSDK/extends/WeChatSDK",
 					"$(PROJECT_DIR)/csshi1/AdSDK/BaiDuAdApi",
 					"$(PROJECT_DIR)/csshi1/AdSDK/GDTAd",
+					"$(PROJECT_DIR)/csshi1/ceshi/Release-iphoneos",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.csshi1;
 				PRODUCT_NAME = "$(TARGET_NAME)";

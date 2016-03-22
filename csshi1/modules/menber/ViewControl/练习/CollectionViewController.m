@@ -9,11 +9,12 @@
 #import "CollectionViewController.h"
 #import "siyoubianliang.h"
 #import "Quartz2dViewController.h"
-
+#import "WeiYuShiYongViewController.h"
+#import "Person.h"
 
 @interface CollectionViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>{
     UIImageView *_imgview;
-    NSDictionary *_namedic;
+    NSMutableArray *_nameary;
 }
 
 @property (nonatomic ,strong) UICollectionView *mainCollection;
@@ -62,10 +63,19 @@
         [_dataary addObject:[UIImage imageNamed:@"vip月卡"]];
     }
      [_dataary addObject:[UIImage imageNamed:@"vip月卡"]];
-    _namedic = [[NSMutableDictionary alloc] init];
-    _namedic = @{
-                 @"Quartz2dViewController" : @"画图"
-                 };
+    _nameary = [NSMutableArray array];
+    Person *person1 = [[Person alloc] init];
+    Person *person2 = [[Person alloc] init];
+    Person *person3 = [[Person alloc] init];
+    person1.classname = @"Quartz2dViewController";
+    person1.title = @"画图";
+    person2.classname = @"WeiYuShiYongViewController";
+    person2.title = @"谓语使用";
+    person3.classname = @"wannengtiaozhuanViewController";
+    person3.title = @"界面跳转";
+    [_nameary addObject:person1];
+    [_nameary addObject:person2];
+    [_nameary addObject:person3];
     
 }
 #pragma mark --delegate
@@ -121,8 +131,9 @@
 //
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     NSLog(@"%ld",(long)indexPath.row);
-    if (indexPath.row == 1) {
-        [self changeViewControl];
+    if (indexPath.row < _nameary.count) {
+        Person *person = (Person *)_nameary[indexPath.row];
+        [self changeViewControl:person.classname];
     }
 }
 //
@@ -147,12 +158,19 @@
     }
 }
 
-- (void)changeViewControl{
-    Quartz2dViewController *vc = [[Quartz2dViewController alloc] init];
-    vc.isplay = ^(NSString *string){
-        NSLog(@"----%@",string);
-        return YES;
-    };
-    [self.navigationController pushViewController:vc animated:YES];
+- (void)changeViewControl:(NSString *)classname{
+    Class theVC = NSClassFromString(classname);
+    if (theVC && [theVC isSubclassOfClass:[UIViewController class]]) {
+        UIViewController *VC = [[theVC alloc] init];
+        VC.hidesBottomBarWhenPushed = YES;
+        
+//        [self presentViewController:VC animated:YES completion:nil];
+//        [self dismissViewControllerAnimated:<#(BOOL)#> completion:<#^(void)completion#>]
+        [self.navigationController pushViewController:VC animated:YES];
+    } else {
+        UIViewController *VC = [[theVC alloc] init];
+        VC.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:VC animated:YES];
+    }
 }
 @end

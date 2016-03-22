@@ -12,6 +12,7 @@
 #import <MapKit/MapKit.h>
 #import "ceshi1ViewController.h"
 #import "MapViewController.h"
+#import "CuoWuTiaoShiViewController.h"
 
 @interface CeShiViewController ()<CLLocationManagerDelegate,MKMapViewDelegate>
 {
@@ -79,6 +80,17 @@
         make.bottom.equalTo(cbutton.mas_top).offset(-20);
         make.size.mas_equalTo(CGSizeMake(150, 50));
     }];
+    UIButton *cuobutton = [UIButton buttonWithType:UIButtonTypeCustom];
+    cuobutton.backgroundColor = [UIColor greenColor];
+    [cuobutton setTitle:@"地图" forState:UIControlStateNormal];
+    [cuobutton addTarget:self action:@selector(cuoVC) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:cuobutton];
+    [cuobutton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(@-40);
+        make.bottom.equalTo(mbutton.mas_top).offset(-20);
+        make.size.mas_equalTo(CGSizeMake(150, 50));
+    }];
+    //
 //    NSLog(@"%f",twoimg.size.width);
     UIImageWriteToSavedPhotosAlbum(twoimg, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
     [self ceshiSave];
@@ -99,6 +111,10 @@
 - (void)mapVC{
     MapViewController *map = [[MapViewController alloc] init];
     [self.navigationController pushViewController:map animated:YES];
+}
+- (void)cuoVC{
+    CuoWuTiaoShiViewController *cap = [[CuoWuTiaoShiViewController alloc] init];
+    [self.navigationController pushViewController:cap animated:YES];
 }
 //将自定义类型数据存入 NSUserDefaults 中
 - (void)ceshiSave{
