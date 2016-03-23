@@ -8,7 +8,7 @@
 
 #import "CuoWuTiaoShiViewController.h"
 
-@interface CuoWuTiaoShiViewController () {
+@interface CuoWuTiaoShiViewController ()<NSStreamDelegate> {
     NSMutableArray *outParams;
 }
 
@@ -47,6 +47,41 @@
         return;
     }
 }
-
-
+//
+//-(void)doTestInputStream{
+//    NSString*path=@"/Users/usr/Desktop/stream.txt";
+//    NSInputStream *readStream=[[NSInputStream alloc]initWithFileAtPath:path];
+//    [readStream setDelegate:self];
+//    [CFReadStreamScheduleWithRunLoop(readStream, [NSRunLoop currentRunLoop], NSRunLoopCommonModes)];
+//    //      [CFReadStreamScheduleWithRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
+//    [readStream open];//调用open开始读文件
+//}
+//
+//-(void)stream:(NSStream*)aStream handleEvent:(NSStreamEvent)eventCode{
+//    switch(eventCode){
+//        caseNSStreamEventHasBytesAvailable:{
+//            uint8_t(1024);
+//            NSInputStream * reads=(NSInputStream*)aStream;
+//            NSInteger blength=[reads read:bufmaxLength:sizeof(buf)];//把流的数据放入
+//            bufferNSData * data=[NSData dataWithBytes:(void*)buflength:blength];
+//            NSString *string=[[NSStringalloc]initWithData:dataencoding:NSUTF8StringEncoding];NSLog(@"%@",string);
+//        }
+//            break;//错误和无事件处理
+//        caseNSStreamEventErrorOccurred:{
+//        }
+//            break;
+//        caseNSStreamEventNone:
+//            break;//打开完成
+//        caseNSStreamEventOpenCompleted:{
+//            NSLog(@"NSStreamEventOpenCompleted");
+//        }
+//            break;
+//            
+//        default:
+//            
+//        break;
+//    }
+//}
 @end
+
+
