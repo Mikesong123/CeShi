@@ -7,7 +7,10 @@
 //
 
 #import "siyoubianliang.h"
+#import "Person.h"
 
 @implementation siyoubianliang
+
+
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "wannengtiaozhuanViewController.h"
+#import "Person.h"
 
 @interface wannengtiaozhuanViewController ()
 {
@@ -38,7 +39,8 @@
     [label mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.equalTo(@0);
     }];
-    [self nstimerunloop];
+//    [self nstimerunloop];
+    [self copylianxi];
 }
 - (void)viewWillDisappear:(BOOL)animated{
     [timer invalidate];
@@ -144,6 +146,34 @@
 - (void)run:(NSTimer *)time {
     NSString *msg = (NSString *)[time userInfo];
     NSLog(@"++++++%@",msg);
+}
+//copy问题
+- (void)copylianxi {
+    
+    Person *person = [[Person alloc] init];
+    NSMutableString *mStr = [[NSMutableString alloc] initWithString:@"小慕"];
+    person.name = mStr;
+    [mStr appendString:@"hello"];
+    
+    NSLog(@"person name %@", person.name);
+    
+//    NSArray *array = @[@1,@2];
+//    NSLog(@"%@",array[2]);
+//     image lookup --address 0x000000010c6e8534//lldb寻找崩溃原因
+}
+
+- (void)kaobei {
+    
+    // 深拷贝
+//    NSArray *deepCopyArray=[[NSArray alloc] initWithArray:someArray copyItems:YES];
+    
+    // 完全拷贝
+//    NSArray *trueDeepCopyArray = [NSKeyedUnarchiver unarchiveObjectWithData:
+//                                  [NSKeyedArchiver archivedDataWithRootObject:oldArray]];
+}
+//悬浮按钮
+- (void)xuannfuanniu {
+//  CAEmitterLayer
 }
 
 @end
