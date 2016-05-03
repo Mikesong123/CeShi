@@ -72,6 +72,7 @@ PODS:
   - TMCache (2.1.0)
   - TTTAttributedLabel (1.13.4)
   - WebViewJavascriptBridge (4.1.4)
+  - YYModel (0.9.12)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.6.1)
@@ -94,6 +95,7 @@ DEPENDENCIES:
   - TMCache (~> 2.1.0)
   - TTTAttributedLabel (~> 1.13.4)
   - WebViewJavascriptBridge (~> 4.1.4)
+  - YYModel (~> 0.9.8)
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
@@ -116,5 +118,6 @@ SPEC CHECKSUMS:
   TMCache: 95ebcc9b3c7e90fb5fd8fc3036cba3aa781c9bed
   TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
   WebViewJavascriptBridge: f10ac16f2cd3adf2b941bd79477c55a8f6e01044
+  YYModel: 33a27f41a995f4c36ff8178421bac9f221a9c7ea
 
 COCOAPODS: 0.34.4

@@ -22,4 +22,18 @@
     return s;
 }
 
+
+//NSArray values = @[@"slp", @"nan", @"22", @"simd"];    NSArray keys = @[@"name", @"sex", @"age", @"discription"];    NSDictionary *dict = [NSDictionary dictionaryWithObjects:values forKeys:keys];
+
+- (instancetype)initWithDict:(NSDictionary *)dict{
+    if (self = [self init]) {
+        [self setValuesForKeysWithDictionary:dict];
+    }
+    return self;
+}
+
+//当然，因为可能有时候会多余的json字段你用不到，你可以写如下的方法：
+- (void)setValue:(id)value forUndefinedKey:(NSString *)key{
+}
+
 @end

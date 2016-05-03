@@ -12,6 +12,7 @@
 
 @property (nonatomic ,copy)NSString *name;//copy ,strong区别，copy不会改变原值，strong会改变
 @property (nonatomic ,assign)NSInteger age;
+@property (nonatomic ,assign)NSString *sex;
 
 @property (nonatomic ,strong)NSString *classname;
 @property (nonatomic ,strong)NSString *title;

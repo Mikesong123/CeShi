@@ -24,6 +24,7 @@ pod 'WebViewJavascriptBridge', '~> 4.1.4'
 pod 'CocoaLumberjack', '~> 2.0.3'
 pod 'OpenUDID', '~> 1.0.0'
 pod 'iRate', '~> 1.11.4'
+pod 'YYModel', '~> 0.9.8'
 
 end
 
