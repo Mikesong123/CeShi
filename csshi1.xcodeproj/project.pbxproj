@@ -141,6 +141,7 @@
 		EB669FCC1C3A5B8E0094F358 /* GetAppInfoRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EB669FCB1C3A5B8E0094F358 /* GetAppInfoRequest.m */; };
 		EB669FCF1C3A5C150094F358 /* AppInfoSceneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB669FCE1C3A5C150094F358 /* AppInfoSceneModel.m */; };
 		EB669FD21C3A5CCF0094F358 /* AppInfoData.m in Sources */ = {isa = PBXBuildFile; fileRef = EB669FD11C3A5CCF0094F358 /* AppInfoData.m */; };
+		EB684ADE1CDADB6F00D82686 /* DeleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB684ADD1CDADB6F00D82686 /* DeleTableViewController.m */; };
 		EB706C7E1C20FCBB00542F7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB706C7D1C20FCBB00542F7D /* main.m */; };
 		EB706C811C20FCBB00542F7D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB706C801C20FCBB00542F7D /* AppDelegate.m */; };
 		EB706C871C20FCBB00542F7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB706C851C20FCBB00542F7D /* Main.storyboard */; };
@@ -185,6 +186,9 @@
 		EB82FD051C5C60EB0085C03B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB82FD041C5C60EB0085C03B /* CoreGraphics.framework */; };
 		EB83D1BB1C9FF3C900866118 /* CuoWuTiaoShiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB83D1BA1C9FF3C900866118 /* CuoWuTiaoShiViewController.m */; };
 		EB8663461C979B1000F93E3B /* siyoubianliang.m in Sources */ = {isa = PBXBuildFile; fileRef = EB8663451C979B1000F93E3B /* siyoubianliang.m */; };
+		EBE366FD1CD8733000BB4DA9 /* CeShiSceneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE366FC1CD8733000BB4DA9 /* CeShiSceneModel.m */; };
+		EBE367001CD87BC900BB4DA9 /* Ce1SHiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE366FF1CD87BC900BB4DA9 /* Ce1SHiModel.m */; };
+		EBE367031CD87BE400BB4DA9 /* Ce2ShiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE367021CD87BE400BB4DA9 /* Ce2ShiModel.m */; };
 		EBFDBC271C76BA3A002DA1E9 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFDBC261C76BA3A002DA1E9 /* MapViewController.m */; };
 		EBFDBC2F1C76EA75002DA1E9 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFDBC2E1C76EA75002DA1E9 /* SettingViewController.swift */; };
 		EBFF42911C7323BD0010BCE9 /* CeShiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFF42901C7323BD0010BCE9 /* CeShiViewController.m */; };
@@ -469,6 +473,8 @@
 		EB669FCE1C3A5C150094F358 /* AppInfoSceneModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppInfoSceneModel.m; path = ../../modules/recomen/ViewModel/AppInfoSceneModel.m; sourceTree = "<group>"; };
 		EB669FD01C3A5CCF0094F358 /* AppInfoData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppInfoData.h; sourceTree = "<group>"; };
 		EB669FD11C3A5CCF0094F358 /* AppInfoData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppInfoData.m; sourceTree = "<group>"; };
+		EB684ADC1CDADB6F00D82686 /* DeleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleTableViewController.h; sourceTree = "<group>"; };
+		EB684ADD1CDADB6F00D82686 /* DeleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleTableViewController.m; sourceTree = "<group>"; };
 		EB706C791C20FCBB00542F7D /* csshi1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = csshi1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB706C7D1C20FCBB00542F7D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EB706C7F1C20FCBB00542F7D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -553,6 +559,12 @@
 		EB83D1BA1C9FF3C900866118 /* CuoWuTiaoShiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CuoWuTiaoShiViewController.m; sourceTree = "<group>"; };
 		EB8663441C979B1000F93E3B /* siyoubianliang.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = siyoubianliang.h; sourceTree = "<group>"; };
 		EB8663451C979B1000F93E3B /* siyoubianliang.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = siyoubianliang.m; sourceTree = "<group>"; };
+		EBE366FB1CD8733000BB4DA9 /* CeShiSceneModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CeShiSceneModel.h; sourceTree = "<group>"; };
+		EBE366FC1CD8733000BB4DA9 /* CeShiSceneModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CeShiSceneModel.m; sourceTree = "<group>"; };
+		EBE366FE1CD87BC900BB4DA9 /* Ce1SHiModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ce1SHiModel.h; sourceTree = "<group>"; };
+		EBE366FF1CD87BC900BB4DA9 /* Ce1SHiModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ce1SHiModel.m; sourceTree = "<group>"; };
+		EBE367011CD87BE400BB4DA9 /* Ce2ShiModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ce2ShiModel.h; sourceTree = "<group>"; };
+		EBE367021CD87BE400BB4DA9 /* Ce2ShiModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ce2ShiModel.m; sourceTree = "<group>"; };
 		EBFDBC251C76BA3A002DA1E9 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		EBFDBC261C76BA3A002DA1E9 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		EBFDBC2B1C76EA35002DA1E9 /* csshi1-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "csshi1-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -630,6 +642,8 @@
 		EB018A851C85801A001CE941 /* 练习 */ = {
 			isa = PBXGroup;
 			children = (
+				EB684ADC1CDADB6F00D82686 /* DeleTableViewController.h */,
+				EB684ADD1CDADB6F00D82686 /* DeleTableViewController.m */,
 			);
 			path = "练习";
 			sourceTree = "<group>";
@@ -1402,6 +1416,10 @@
 			children = (
 				EB733C161C50B927009ADCE1 /* FilmCommentDataModel */,
 				EB7384391C2A949E00B7419F /* UserInfo */,
+				EBE366FE1CD87BC900BB4DA9 /* Ce1SHiModel.h */,
+				EBE366FF1CD87BC900BB4DA9 /* Ce1SHiModel.m */,
+				EBE367011CD87BE400BB4DA9 /* Ce2ShiModel.h */,
+				EBE367021CD87BE400BB4DA9 /* Ce2ShiModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1425,6 +1443,8 @@
 			children = (
 				EB733C131C50B912009ADCE1 /* FilmCommentViewModels.h */,
 				EB733C141C50B912009ADCE1 /* FilmCommentViewModels.m */,
+				EBE366FB1CD8733000BB4DA9 /* CeShiSceneModel.h */,
+				EBE366FC1CD8733000BB4DA9 /* CeShiSceneModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -1812,6 +1832,7 @@
 			files = (
 				EB614A9C1C2917C3006C94A8 /* MJRefreshGifHeader.m in Sources */,
 				EB7384381C2A93DC00B7419F /* UserTransation.m in Sources */,
+				EBE367001CD87BC900BB4DA9 /* Ce1SHiModel.m in Sources */,
 				EB4C9A861C23A56D00212870 /* NSObject+SystemInfo.m in Sources */,
 				EB8663461C979B1000F93E3B /* siyoubianliang.m in Sources */,
 				EB4C9A5F1C23A2AE00212870 /* pinyin.m in Sources */,
@@ -1842,6 +1863,7 @@
 				EB614ABC1C2917C3006C94A8 /* UMFeedbackViewController.m in Sources */,
 				EB83D1BB1C9FF3C900866118 /* CuoWuTiaoShiViewController.m in Sources */,
 				EB706C7E1C20FCBB00542F7D /* main.m in Sources */,
+				EBE367031CD87BE400BB4DA9 /* Ce2ShiModel.m in Sources */,
 				EB669FD21C3A5CCF0094F358 /* AppInfoData.m in Sources */,
 				EB614ABE1C2917C3006C94A8 /* UMChatTableViewCell.m in Sources */,
 				EB733C0F1C50B8FA009ADCE1 /* FilmCommentTableViewCell.m in Sources */,
@@ -1862,8 +1884,10 @@
 				EB04B4151C75CB0B005729D0 /* ceshi1ViewController.m in Sources */,
 				EB4C9A8B1C23A56D00212870 /* UIView+Appearance.m in Sources */,
 				EB4C9A591C23A2AE00212870 /* NSData+EasyExtend.m in Sources */,
+				EBE366FD1CD8733000BB4DA9 /* CeShiSceneModel.m in Sources */,
 				EB733C121C50B90A009ADCE1 /* FilmCommentRequest.m in Sources */,
 				EB614AC01C2917C3006C94A8 /* UMFullScreenPhotoView.m in Sources */,
+				EB684ADE1CDADB6F00D82686 /* DeleTableViewController.m in Sources */,
 				EB4C9A891C23A56D00212870 /* UIImage+Extension.m in Sources */,
 				EB4FF48D1C3CBD8C00C424CD /* SDCollectionViewCell.m in Sources */,
 				EB4C9A581C23A2AE00212870 /* NSArray+EasyExtend.mm in Sources */,

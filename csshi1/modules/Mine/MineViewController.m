@@ -10,6 +10,7 @@
 #import "FilmCommentViewController.h"
 //#import "ceshi-Swift.h"
 #import "csshi1-Swift.h"
+#import "DeleTableViewController.h"
 
 @interface MineViewController ()
 
@@ -40,6 +41,11 @@
 }
 - (IBAction)clickSetBT:(id)sender {
     SettingViewController *sett = [[SettingViewController alloc] init];
+    sett.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:sett animated:YES];
+}
+- (IBAction)textAction:(id)sender {
+    DeleTableViewController *sett = [[DeleTableViewController alloc] init];
     sett.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:sett animated:YES];
 }

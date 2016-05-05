@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -67,36 +67,77 @@
                                     <action selector="clickSetBT:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gml-oB-L8z"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUd-7j-w98">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.19072875040000001" green="1" blue="0.51136170810000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="141" id="EtZ-Wb-th1"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="141" id="TNd-ag-upy"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="mXr-iy-dvN"/>
+                                    <constraint firstAttribute="height" constant="30" id="vNI-TU-cbR"/>
+                                </constraints>
+                                <state key="normal" title="测试"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="EtZ-Wb-th1"/>
+                                        <exclude reference="TNd-ag-upy"/>
+                                        <exclude reference="mXr-iy-dvN"/>
+                                        <exclude reference="vNI-TU-cbR"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="EtZ-Wb-th1"/>
+                                        <include reference="TNd-ag-upy"/>
+                                        <include reference="mXr-iy-dvN"/>
+                                        <include reference="vNI-TU-cbR"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="textAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eAn-RO-gh3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="6MH-0f-MLq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="110" id="0ZY-lh-x7E"/>
+                            <constraint firstItem="jUd-7j-w98" firstAttribute="top" secondItem="6MH-0f-MLq" secondAttribute="bottom" constant="41" id="2BT-Dl-TfF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jUd-7j-w98" secondAttribute="trailing" constant="109" id="2W2-9j-iiU"/>
                             <constraint firstItem="mlC-lt-BFs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="265" id="Thq-4i-OL9"/>
                             <constraint firstItem="mlC-lt-BFs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="110" id="TmR-Gh-mxT"/>
+                            <constraint firstItem="jUd-7j-w98" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="110" id="c46-MJ-5vl"/>
                             <constraint firstItem="6MH-0f-MLq" firstAttribute="top" secondItem="mlC-lt-BFs" secondAttribute="bottom" constant="31" id="pNh-iL-So6"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="mlC-lt-BFs"/>
                                 <exclude reference="6MH-0f-MLq"/>
+                                <exclude reference="jUd-7j-w98"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="Thq-4i-OL9"/>
                                 <exclude reference="TmR-Gh-mxT"/>
                                 <exclude reference="0ZY-lh-x7E"/>
                                 <exclude reference="pNh-iL-So6"/>
+                                <exclude reference="2BT-Dl-TfF"/>
+                                <exclude reference="2W2-9j-iiU"/>
+                                <exclude reference="c46-MJ-5vl"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="mlC-lt-BFs"/>
                                 <include reference="6MH-0f-MLq"/>
+                                <include reference="jUd-7j-w98"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="Thq-4i-OL9"/>
                                 <include reference="TmR-Gh-mxT"/>
                                 <include reference="0ZY-lh-x7E"/>
                                 <include reference="pNh-iL-So6"/>
+                                <include reference="2BT-Dl-TfF"/>
+                                <include reference="2W2-9j-iiU"/>
+                                <include reference="c46-MJ-5vl"/>
                             </mask>
                         </variation>
                     </view>
